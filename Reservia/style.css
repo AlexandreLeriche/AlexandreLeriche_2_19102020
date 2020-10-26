@@ -1,14 +1,18 @@
+/* paramètres globaux */
 @font-face
 {
 	font-family: 'Raleway';
-	src: url('Raleway-Italic-VariableFont_wght.ttf');
-	src: url('Raleway-VariableFont_wght.ttf');
+	src: url('font/Raleway-VariableFont_wght.ttf') format('trutype');
+	font-weight: normal;
+	font-style: normal;
 }
-
 
 #bloc_page
 {
-	width: 80%;
+	width: 60%;
 	margin: auto;
 	font-family: 'Raleway', Arial, sans-serif;
 }
+
+/* en-tête */
+header

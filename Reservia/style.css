@@ -8,76 +8,7 @@
 
 #bloc_page
 {
-	width: 900px;
+	width: 80%;
 	margin: auto;
 	font-family: 'Raleway', Arial, sans-serif;
-}
-
-
-header
-{
-	display: flex;
-	justify-content: space-between;
-}
-#logo
-{
-	display: flex;
-	width: 100px;
-	height: 40px;
-}
-nav li
-{
-	list-style-type: none;
-	margin-right: 30px;
-}
-nav a
-{
-	text-decoration: none;
-}
-.ancre_bleu_clair
-{
-	color: #DEEBFF;
-	font-weight: bold;
-}
-.ancre_bleu_foncé
-{
-	color: #0065FC;
-	font-weight: bold;
-}
-.ancre_noir
-{
-	color: black;
-}
-nav ul
-{
-	display: flex;
-}
-section h2
-{
-	font-size: 1.2em;
-}
-#sous-titre
-{
-	font-size: 0.9em;
-}
-form
-{
-	display: flex;
-	background-color: #F2F2F2;
-	width: 310px;
-	height: 40px;
-	border-radius: 20px;
-}
-form i
-{
-	margin: auto;
-}
-#submit
-{
-	background-color: #0065FC;
-	color: white;
-	font-size: 0.8em;
-	border-radius: 0px 20px 20px 0px;
-	width: 100px;
-	height: 40px;
 }

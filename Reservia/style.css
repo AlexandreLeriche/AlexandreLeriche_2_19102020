@@ -1,4 +1,5 @@
 /* paramètres globaux */
+
 @font-face
 {
 	font-family: 'Raleway';
@@ -9,10 +10,125 @@
 
 #bloc_page
 {
-	width: 60%;
+	width: 80%;
 	margin: auto;
 	font-family: 'Raleway', Arial, sans-serif;
 }
 
 /* en-tête */
+
 header
+{
+	display: flex;
+	align-items: center;
+}
+
+#logo
+{
+	width: 40%;
+}
+
+nav
+{
+	width: 100%;
+}
+
+ nav ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+header a
+{
+	text-decoration: none;
+	color: #0e0e0e;
+}
+
+nav ul li, #inscrire
+{
+	padding-left: 25px;
+}
+
+#inscrire
+{
+	font-weight: bold;
+	color: #0065FC;
+}
+
+header a
+{
+	font-size: 0.8em;
+}
+
+nav a:hover
+{
+	padding-top: 20px;
+	border-top: 1px solid #0065FC;
+	color: #0065FC;
+}
+
+/* section 1 : recherche */
+
+h1
+{
+	font-size: 1.1em;
+}
+
+h2
+{
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+form
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 280px;
+	height: 40px;
+}
+
+form p
+{
+	width: 100%;
+	height: 90%;
+	margin: 0;
+	padding: 0;	
+	display: flex;
+}
+
+label
+{
+	background-color: #F2F2F2;
+	border-radius: 10px 0 0 10px;
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-map-marker-alt
+{
+	font-size: 12px;
+}
+
+.recherche
+{
+	width: 100%;
+	border: none;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+}
+
+#submit
+{
+	background-color: #0065FC;
+	border: none;
+	border-radius: 0 15px 15px 0;
+	color: white;
+	font-size: 0.8em;
+	width: 60%;
+}

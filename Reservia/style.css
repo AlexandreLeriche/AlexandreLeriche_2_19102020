@@ -375,7 +375,18 @@ aside div div div
 	position: relative;
 }
 
-aside p
+aside p:first-child
 {
-	font-size: 0.7em;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+aside .blue
+{
+	color: #0065FC;
+}
+
+aside .grey
+{
+	color: #F2F2F2;
 }

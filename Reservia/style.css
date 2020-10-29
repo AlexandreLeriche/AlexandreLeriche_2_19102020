@@ -152,6 +152,12 @@ label
 	position: relative;
 }
 
+#rechercher li:nth-child(2):hover, #rechercher li:nth-child(3):hover, #rechercher li:nth-child(4):hover, #rechercher li:nth-child(5):hover
+{
+	background-color: #0065FC;
+	text-decoration: underline;
+}
+
 #rechercher li div
 {
 	position: absolute;
@@ -389,4 +395,92 @@ aside .blue
 aside .grey
 {
 	color: #F2F2F2;
+}
+
+/* section 3: activités */
+.block
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 350px;
+}
+
+#activités
+{
+	margin-top: 50px;
+}
+
+.figure_act_1, .figure_act_2, .figure_act_3
+{
+	width: 22%;
+}
+
+#activités figure
+{
+	width: 100%;
+	height: 100%;
+}
+
+#activités img
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px 10px 0 0;
+	object-fit: cover;
+}
+
+#activités figcaption
+{
+	padding-top: 7px;
+	border-radius: 10px;
+	box-shadow: 7px 7px 10px #F2F2F2;
+	margin-left: 5px;
+}
+
+.figure_act_1
+{
+	height: 300px;
+	border-radius: 20px;
+}
+
+.figure_act_1 figure
+{
+	height: 280px;
+}
+
+.figure_act_2, .figure_act_3
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 280px;
+}
+
+.figure_act_2 div:first-child
+{
+	height: 170px;
+}
+
+.figure_act_2 div:last-child
+{
+	height: 90px;
+	margin-top: 40px;
+}
+
+.figure_act_3 div:first-child
+{
+	height: 130px;
+}
+
+.figure_act_3 div:last-child
+{
+	height: 130px;
+	margin-top: 40px;
+}
+
+#activités a
+{
+	text-decoration: none;
+	color: black;
 }

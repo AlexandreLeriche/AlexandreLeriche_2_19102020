@@ -5,6 +5,7 @@
 		<title>Reservia</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://kit.fontawesome.com/d4c52cff67.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width">
 	</head>
 
 	<body>
@@ -30,13 +31,21 @@
 			<section id="rechercher">
 				<h1>Touvez votre hébergement pour des vacances de rêve</h1>
 					<h2>En plein centre ville ou en pleine nature</h2>
-					<form method="post" action="#">
+					<form class="search_classic" method="post" action="#">
 						<p>
 							<label><i class="fas fa-map-marker-alt"></i></label>
 							<input class="recherche" type="search" name="search" placeholder="Marseille, France">
 							<input class="submit" type="submit" name="Rechercher" value="Rechercher">
 						</p>
 					</form>
+					<form class="search_mobile" method="post" action="#">
+						<p>
+							<label><i class="fas fa-map-marker-alt"></i></label>
+							<input class="recherche" type="search" name="search" placeholder="Marseille, France">
+							<a class="submit_logo" href="https://www.google.com/" target="_blank"><i class="fas fa-search"></i></a>
+						</p>
+					</form>
+
 					<ul>
 						<li>Filtres</li>
 						<li>

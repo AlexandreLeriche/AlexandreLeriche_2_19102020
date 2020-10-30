@@ -507,3 +507,87 @@ footer a
 	text-decoration: none;
 	color: black;
 }
+
+/* Responsive ecran inferieur à 1024px */
+@media all and (max-width: 1024px)
+{
+	header
+	{
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+	}
+
+	header div
+	{
+		width: 30%;
+	}
+
+	header img
+	{
+		width: 100%;
+		order: 1;
+	}
+
+	#inscrire
+	{
+		width: 50%;
+		text-align: right;
+		order: 2;
+		font-size: 1em;
+	}
+
+	nav
+	{
+		width: 100%;
+		height: 30px;
+		order: 3;
+		margin-top: 15px;
+	}
+
+	nav ul
+	{
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		height: 100%;
+	}
+
+	nav ul li
+	{
+		padding: 0;
+		margin: 0;
+		width: 50%;
+		height: 100%;
+		display: flex;
+		text-align: left;
+	}
+
+	nav ul li a
+	{
+		width: 100%;
+		height: 100%;
+		border-bottom: 2px solid #F2F2F2;
+		padding: 0;
+		margin: 0;
+	}
+
+	nav a:hover, nav a:focus
+	{
+		border-top: none;
+		border-bottom: 2px solid #0065FC;
+		padding: 0;
+		margin-bottom: 5px;
+	}
+
+	#hebergements_populaires
+	{
+		flex-direction: column-reverse;
+	}
+
+	footer
+	{
+		width: 80%;
+	}
+
+
+}

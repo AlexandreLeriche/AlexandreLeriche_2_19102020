@@ -282,6 +282,7 @@ figcaption
 	width: 30%;
 	background-color: white;
 	border-radius: 20px;
+	box-shadow: 3px 3px 2px #F2F2F2;
 	margin-top: 10px;
 }
 
@@ -680,5 +681,66 @@ footer a
 	#rechercher li:first-child
 	{
 		width: 100%;
+	}
+
+	aside
+	{
+		border-radius: 0;
+		width: 100%;
+	}
+
+	aside a
+	{
+		width: 85%;
+	}
+
+	.figure_pop
+	{
+		height: 125px;
+	}
+
+	.hébergements
+	{
+		width: 100%;
+		height: auto;
+		margin-top: 20px;
+		background-color: white;
+	}
+
+	.hébergements .figure
+	{
+		width: 100%;
+	}
+
+	.block, .figure_act_2, .figure_act_3
+	{
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.block
+	{
+		height: 900px;
+	}
+
+	.figure_act_1, .figure_act_2, .figure_act_3
+	{
+		width: 100%;
+	}
+
+	.figure_act_1, .figure_act_2 div:first-child, .figure_act_2 div:last-child, .figure_act_3 div:first-child, .figure_act_3 div:last-child
+	{
+		height: 130px;
+		
+	}
+
+	#activités figure
+	{
+		height: 100px;
+	}
+
+	.figure_act_2 div:last-child
+	{
+		margin-top: 25px;
 	}
 }

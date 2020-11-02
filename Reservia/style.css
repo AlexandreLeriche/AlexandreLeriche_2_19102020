@@ -808,3 +808,27 @@ footer a
 		font-size: 0.9em;
 	}
 }
+
+/* Responsive portable 1025px 1600px*/
+@media all and (min-width: 1025px) and (max-width: 1600px)
+{
+	#bloc_page
+	{
+		width: 80%;
+	}
+
+	.figure_pop
+	{
+		height: 120px;
+	}
+
+	#activités figcaption
+	{
+		font-size: 0.7em;
+	}
+
+	footer
+	{
+		font-size: 0.9em;
+	}
+}

@@ -173,7 +173,7 @@ label
 
 #rechercher li:nth-child(2):hover, #rechercher li:nth-child(3):hover, #rechercher li:nth-child(4):hover, #rechercher li:nth-child(5):hover
 {
-	background-color: #0065FC;
+	background-color: #DEEBFF;
 	text-decoration: underline;
 }
 

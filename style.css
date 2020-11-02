@@ -1,0 +1,834 @@
+/* paramètres globaux */
+@font-face
+{
+	font-family: 'Raleway';
+	src: url('font/Raleway-VariableFont_wght.ttf') format('trutype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#bloc_page
+{
+	width: 50%;
+	margin: auto;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+/* en-tête */
+header
+{
+	display: flex;
+	align-items: center;
+}
+
+#logo
+{
+	width: 40%;
+}
+
+nav
+{
+	width: 100%;
+}
+
+ nav ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+header a
+{
+	text-decoration: none;
+	color: #0e0e0e;
+}
+
+nav ul li, #inscrire
+{
+	padding-left: 25px;
+}
+
+#inscrire
+{
+	font-weight: bold;
+	color: #0065FC;
+}
+
+header a
+{
+	font-size: 0.8em;
+}
+
+nav a:hover
+{
+	padding-top: 20px;
+	border-top: 1px solid #0065FC;
+	color: #0065FC;
+}
+
+/* section 1 : recherche */
+h1
+{
+	font-size: 1.1em;
+}
+
+h2
+{
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+form
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 280px;
+	height: 40px;
+}
+
+form p
+{
+	width: 100%;
+	height: 90%;
+	margin: 0;
+	padding: 0;	
+	display: flex;
+}
+
+label
+{
+	background-color: #F2F2F2;
+	border-radius: 10px 0 0 10px;
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-map-marker-alt
+{
+	font-size: 12px;
+}
+
+.recherche
+{
+	width: 100%;
+	border: none;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+}
+
+.submit
+{
+	background-color: #0065FC;
+	border-radius: 0 15px 15px 0;
+	color: white;
+	font-size: 0.8em;
+	width: 60%;
+	border: none;
+}
+
+.submit_logo
+{
+	background-color: #0065FC;
+	border-radius: 0 15px 15px 0;
+	color: white;
+	font-size: 1em;
+	border: none;
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.search_mobile
+{
+	display: none;
+}
+
+#rechercher ul
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+	height: 50px;
+	padding-left: 0;
+	list-style-type: none;
+	margin-top: 20px;
+	font-size: 0.9em;
+}
+
+#rechercher li:nth-child(2), #rechercher li:nth-child(3), #rechercher li:nth-child(4), #rechercher li:nth-child(5)
+{
+	border: 1px solid  #F2F2F2;
+	padding: 5px 10px 5px 30px;
+	border-radius: 30px;
+	font-size: 0.9em;
+	position: relative;
+}
+
+#rechercher li:nth-child(2):hover, #rechercher li:nth-child(3):hover, #rechercher li:nth-child(4):hover, #rechercher li:nth-child(5):hover
+{
+	background-color: #DEEBFF;
+	text-decoration: underline;
+}
+
+#rechercher li div
+{
+	position: absolute;
+	left: -2px;
+	top: -1px;
+	width: 25px;
+	height: 25px;
+	background-color: #DEEBFF;
+	border-radius: 30px;
+}
+
+#rechercher li div p
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+	color: #0065FC;
+}
+
+#rechercher ul li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+#rechercher li
+{
+	font-weight: bold;
+}
+
+#rechercher div:last-child
+{
+	display: flex;
+}
+
+.fa-info
+{
+	font-size: 11px;
+	color: #0065FC;
+	border: 1px solid #F2F2F2;
+	border-radius: 30px;
+	padding: 3px 6px;
+	margin-right: 5px;
+}
+
+/*section 2 : hebergement, aside */
+#hebergements_populaires
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+h3
+{
+	font-size: 0.9em;
+}
+
+figcaption
+{
+	font-weight: bold;
+	padding: 3px 0 0 6px;
+	font-size: 0.8em;
+}
+
+.hébergements
+{
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	width: 60%;
+	height: 500px;
+}
+
+#hebergements_populaires h3
+{
+	margin: 20px 0 10px 20px;
+}
+
+#hebergements_populaires h3+div
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	height: 80%;
+}
+
+#hebergements_populaires div p
+{
+	margin: 9px 0 3px 7px;
+	font-size: 0.7em;
+	padding: 0;
+}
+
+.figure
+{
+	width: 30%;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 3px 3px 2px #F2F2F2;
+	margin-top: 10px;
+}
+
+.hébergements div img
+{
+	width: 100%;
+	height: 100px;
+	border-radius: 10px 10px 0 0;
+	object-fit: cover;
+}
+
+figure
+{
+	margin: 2px 2px 0 2px;
+}
+
+.hébergements div a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.hébergements span
+{
+	font-weight: bold;
+}
+
+.hébergements .blue
+{
+	color: #0065FC; 
+}
+
+.hébergements .grey
+{
+	color: #F2F2F2;
+}
+.hébergements p a
+{
+	text-decoration: none;
+	color: black;
+	padding-left: 10px;
+}
+
+.hébergements p
+{
+	font-weight: bold;
+}
+
+/* Aside */
+aside
+{
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	width: 35%;
+	height: 500px;
+}
+
+.titre
+{
+	position: relative;
+	width: 100%;
+	height: 10%;
+}
+
+aside h3
+{
+	position: absolute;
+}
+
+.fa-chart-line
+{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+#populaires
+{
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+aside a
+{
+	width: 80%;
+	text-decoration: none;
+	color: black;
+}
+
+.figure_pop
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	border-radius: 20px;
+}
+
+aside img
+{
+	width: 40%;
+	height: 90%;
+	border-radius: 10px 0 0 10px;
+	object-fit: cover;
+}
+
+aside div div div
+{
+	width: 50%;
+	height: 90%;
+	position: relative;
+}
+
+aside p:first-child
+{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+aside .blue
+{
+	color: #0065FC;
+}
+
+aside .grey
+{
+	color: #F2F2F2;
+}
+
+/* section 3: activités */
+.block
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 350px;
+}
+
+#activités
+{
+	margin-top: 50px;
+}
+
+.figure_act_1, .figure_act_2, .figure_act_3
+{
+	width: 22%;
+}
+
+#activités figure
+{
+	width: 100%;
+	height: 100%;
+}
+
+#activités img
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px 10px 0 0;
+	object-fit: cover;
+}
+
+#activités figcaption
+{
+	padding-top: 7px;
+	border-radius: 10px;
+	box-shadow: 7px 7px 10px #F2F2F2;
+	margin-left: 5px;
+}
+
+.figure_act_1
+{
+	height: 300px;
+	border-radius: 20px;
+}
+
+.figure_act_1 figure
+{
+	height: 280px;
+}
+
+.figure_act_2, .figure_act_3
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 280px;
+}
+
+.figure_act_2 div:first-child
+{
+	height: 170px;
+}
+
+.figure_act_2 div:last-child
+{
+	height: 90px;
+	margin-top: 40px;
+}
+
+.figure_act_3 div:first-child
+{
+	height: 130px;
+}
+
+.figure_act_3 div:last-child
+{
+	height: 130px;
+	margin-top: 40px;
+}
+
+#activités a
+{
+	text-decoration: none;
+	color: black;
+}
+
+/* footer */
+footer
+{
+	background-color: #F2F2F2;
+	width: 100%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.footer
+{
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0 0 30px;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: black;
+}
+
+/* Responsive ecran inferieur à 1024px */
+@media all and (max-width:1024px)
+{
+	#bloc_page
+	{
+		width: 90%;
+	}
+
+	header
+	{
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+	}
+
+	header div
+	{
+		width: 20%;
+	}
+
+	header img
+	{
+		width: 100%;
+		order: 1;
+	}
+
+	#inscrire
+	{
+		width: 70%;
+		text-align: right;
+		order: 2;
+		font-size: 1.1em;
+	}
+
+	nav
+	{
+		width: 100%;
+		height: 30px;
+		order: 3;
+		margin-top: 15px;
+	}
+
+	nav ul
+	{
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		height: 100%;
+	}
+
+	nav ul li
+	{
+		padding: 0;
+		margin: 0;
+		width: 50%;
+		height: 100%;
+		display: flex;
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+	nav ul li a
+	{
+		width: 100%;
+		height: 100%;
+		border-bottom: 2px solid #F2F2F2;
+		padding: 0;
+		margin: 0;
+	}
+
+	nav a:hover, nav a:focus
+	{
+		border-top: none;
+		border-bottom: 2px solid #0065FC;
+		padding: 0;
+		margin-bottom: 5px;
+	}
+
+	#hebergements_populaires
+	{
+		flex-direction: column-reverse;
+	}
+
+	footer
+	{
+		width: 80%;
+	}
+}
+
+/* Responsive ecran inférieur 767px */
+@media all and (max-width:767px)
+{
+	#bloc_page
+	{
+		width: 100%;
+	}
+
+	#logo
+	{
+		width: 90%;
+	}
+
+	#inscrire
+	{
+		font-size: 1em;
+	}
+	header a
+	{
+		font-size: 0.7em;
+	}
+
+	section
+	{
+		width: 90%;
+		margin: auto;
+	}
+
+	.search_classic
+	{
+		display: none;
+	}
+
+	.search_mobile
+	{
+		display: block;
+		width: 100%;
+	}
+
+	#rechercher
+	{
+		width: 65%;
+	}
+
+	#rechercher h2
+	{
+		font-size: 0.8em;
+		margin-bottom: 20px;
+	}
+
+	#rechercher ul
+	{
+		flex-wrap: wrap;
+		width: 100%;
+		height: 140px;
+	}
+
+	#rechercher li:nth-child(2), #rechercher li:nth-child(3), #rechercher li:nth-child(4), #rechercher li:nth-child(5)
+	{
+		font-size: 1em;
+	}
+
+	#rechercher li:first-child
+	{
+		width: 100%;
+	}
+
+	aside
+	{
+		border-radius: 0;
+		width: 100%;
+	}
+
+	aside a
+	{
+		width: 85%;
+	}
+
+	.figure_pop
+	{
+		height: 125px;
+	}
+
+	.hébergements
+	{
+		width: 100%;
+		height: auto;
+		margin-top: 20px;
+		background-color: white;
+	}
+
+	.hébergements .figure
+	{
+		width: 100%;
+	}
+
+	.block, .figure_act_2, .figure_act_3
+	{
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.block
+	{
+		height: 900px;
+	}
+
+	.figure_act_1, .figure_act_2, .figure_act_3
+	{
+		width: 100%;
+	}
+
+	.figure_act_1, .figure_act_2 div:first-child, .figure_act_2 div:last-child, .figure_act_3 div:first-child, .figure_act_3 div:last-child
+	{
+		height: 130px;
+	}
+
+	#activités figure
+	{
+		height: 100px;
+	}
+
+	.figure_act_2 div:last-child
+	{
+		margin-top: 25px;
+	}
+
+	footer
+	{
+		width: 90%;
+	}
+
+	footer div
+	{
+		flex-direction: column;
+	}
+}
+
+/* Responsive tablette 768px et 1024px */
+@media all and (min-width: 768px) and (max-width: 1024px)
+{
+	#bloc_page
+	{
+		width: 100%;
+	}
+
+	section
+	{
+		width: 90%;
+		margin: auto;
+	}
+
+	#rechercher ul
+	{
+		width: 90%;
+	}
+
+	aside
+	{
+		width: 90%;
+		margin: auto;
+		margin-top: 15px;
+	}
+
+	.figure_pop
+	{
+		height: 120px;
+	}
+
+	aside div div div
+	{
+		margin-top: 25px;
+	}
+
+	.hébergements
+	{
+		width: 90%;
+		margin: auto;
+		margin-top: 25px;
+	}
+
+	#activités figcaption
+	{
+		font-size: 0.6em;
+	}
+
+	footer
+	{
+		width: 90%;
+		font-size: 0.9em;
+	}
+}
+
+/* Responsive portable 1025px 1600px*/
+@media all and (min-width: 1025px) and (max-width: 1600px)
+{
+	#bloc_page
+	{
+		width: 80%;
+	}
+
+	.figure_pop
+	{
+		height: 120px;
+	}
+
+	#activités figcaption
+	{
+		font-size: 0.7em;
+	}
+
+	footer
+	{
+		font-size: 0.9em;
+	}
+}

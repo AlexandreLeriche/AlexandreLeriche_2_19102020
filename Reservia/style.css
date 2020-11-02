@@ -731,7 +731,6 @@ footer a
 	.figure_act_1, .figure_act_2 div:first-child, .figure_act_2 div:last-child, .figure_act_3 div:first-child, .figure_act_3 div:last-child
 	{
 		height: 130px;
-		
 	}
 
 	#activités figure
@@ -742,5 +741,70 @@ footer a
 	.figure_act_2 div:last-child
 	{
 		margin-top: 25px;
+	}
+
+	footer
+	{
+		width: 90%;
+	}
+
+	footer div
+	{
+		flex-direction: column;
+	}
+}
+
+/* Responsive tablette 768px et 1024px */
+@media all and (min-width: 768px) and (max-width: 1024px)
+{
+	#bloc_page
+	{
+		width: 100%;
+	}
+
+	section
+	{
+		width: 90%;
+		margin: auto;
+	}
+
+	#rechercher ul
+	{
+		width: 90%;
+	}
+
+	aside
+	{
+		width: 90%;
+		margin: auto;
+		margin-top: 15px;
+	}
+
+	.figure_pop
+	{
+		height: 120px;
+	}
+
+	aside div div div
+	{
+		margin-top: 25px;
+	}
+
+	.hébergements
+	{
+		width: 90%;
+		margin: auto;
+		margin-top: 25px;
+	}
+
+	#activités figcaption
+	{
+		font-size: 0.6em;
+	}
+
+	footer
+	{
+		width: 90%;
+		font-size: 0.9em;
 	}
 }
